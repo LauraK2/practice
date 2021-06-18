@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Final Project</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+        <link rel="stylesheet" type="text/css" href="style/style.css">  
+        <style>
+            /*styling for github button*/
+            #github-button
+            {
+                color:black;
+                background-color: #d3dcf2;
+                text-decoration: bold;
+                font-size: 30px;
+                margin:15px;
+                padding:7px;
+                float: center;
+                border: 2px outset #252838;
+            }
+        </style> 
+    </head>
+    <body style="background-color: #E6E6FA; color: #252838;">
+        <main>
+            <!-- nav bar -->
+            <!--made class flex-container so the nav bar take the styling for a flexbox which i named flex-contanier-->
+            <nav class="flex-container">
+                <ul>
+                    <li>
+                        <a href="index.html">Home Page</a>
+                    </li>
+                    <li>
+                        <a href="About me.html"> About me</a>
+                    </li>
+                    <li>
+                        <a href="Achievements.html"> Achievements</a>
+                    </li>
+                    <li>
+                        <a href="Extracurriculars.html"> Extracurriculars</a>
+                    </li>
+                    <li>
+                        <a href="Contact.html"> Contact me</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <br> <br> <br> <br> <br>
+
+            <!--titlr-->
+            <h1>Contact me </h1>
+            
+            <!--div for information about my email-->
+            <div class = "div"> 
+                <p style="font-size:27px; width:300px;"> 
+                <span style="font-weight:bold; font-size:27px; text-decoration:underline;">Email</span> 
+                <br><br>
+                Personal email: <br> laurakatsman@gmail.com
+                <br> or <br> lkatsman2@gmail.com</p>
+                <br><br>
+            </div>
+
+            <!--div for information about github-->
+            <div class = "div"> 
+                <p style="font-size:27px; width:300px;"> 
+                <span style="font-weight:bold; font-size:27px; text-decoration:underline;">Github</span> 
+                <br><br>
+                Github stores my past projects, click button to check out my page.</p>
+                <button id="github-button"> Github</button>
+                <script>
+                    /** have set my github button using its ID, then set a link to github page that can only be accessed through the button and is not on my nav */
+                    document.getElementById("github-button").setAttribute("onclick", "window.location.href = 'https://github.com/LauraK2';");   
+                </script>
+            </div>
+
+            <!-- This is a form that gets a user to contact you -->
+            <form method="GET">
+                <br>
+                <!-- This label and text input are for the user to enter their company or 
+                    job name to give me and idea of whos contacting me-->
+                <p><label for="food"><b><u>Company name:</b></u></label> </p>
+                <input type="text" name="dish name" size="50" maxlength="75" placeholder="Please enter your Company name" id="dish"/>
+                <br>
+
+                <!-- This label and dropdown menu are for the user to choose how theyd like to contact me -->
+                <p> <label for="contact type"><b><u>Click preferred contact type:</u></b></label> </p>
+                <select name="dish" id="dish">
+                    <option value="other"> Other</option>
+                    <option value="phone call">Phone call</option>
+                    <option value=" email">Email</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <!--This label is for that user to type out a idfferent platofrm to contact me on-->
+                <form action="/action_page.php"></form>
+                <p><label for="email"> <b><u>If select "other", type what platform you'd like to use:</b></u></label></p>
+                    <input type="email" id="email" name="email">
+                </form>
+                <br> <br> <br>
+
+                <!-- This label is for the user to type thier email so i may contact them-->
+                <form action="/action_page.php">
+                    <label for="email"> <b><u>Enter your email:</b></u></label>
+                    <input type="email" id="email" name="email">
+                </form>
+                <br/>
+
+                <!-- This will submit the form-->
+                <button type="button" onclick="alert('Your form has been submitted')"> Submit</button>
+            </form>
+        </main>
+    </body> 
+</html> 

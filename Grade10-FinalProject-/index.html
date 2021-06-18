@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Final Project</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+        <link rel="stylesheet" type="text/css" href="style/style.css">  
+        <style>
+            /*styling for about me button*/
+            #aboutme-button
+            {
+                color:black;
+                background-color: #d3dcf2;
+                text-decoration: bold;
+                font-size: 30px;
+                margin:15px;
+                padding:7px;
+                float: center;
+                border: 2px outset #252838;
+            }
+       
+            /*styling for extracurriculars button*/
+            #extra-button
+            {
+                color:black;
+                background-color: #d3dcf2;
+                text-decoration: bold;
+                font-size: 30px;
+                margin:15px;
+                padding:7px;
+                float: center;
+                border: 2px outset #252838;
+            }
+
+            /*styling for achievemnets button*/
+            #ach-button
+            {
+                color:black;
+                background-color: #d3dcf2;
+                text-decoration: bold;
+                font-size: 30px;
+                margin:15px;
+                padding:7px;
+                float: center;
+                border: 2px outset #252838;
+            }  
+
+            /*styling for image front picture*/
+            #image
+            {
+                margin:7px;
+                float:right;
+                border: 2px outset #252838;
+                -webkit-border:2px outset #252838;
+                padding:0%;
+                height: 400px;
+                width: 98%;
+                float: right;
+            }
+
+        </style> 
+    </head>
+    <body style="background-color: #E6E6FA; color: #252838;">
+        <main>
+            <!-- nav bar -->
+            <!--made class flex-container so the nav bar take the styling for a flexbox which i named flex-contanier-->
+            <nav class="flex-container">
+                <ul>
+                    <li>
+                        <a href="index.html">Home Page</a>
+                    </li>
+                    <li>
+                        <a href="About me.html"> About me</a>
+                    </li>
+                    <li>
+                        <a href="Achievements.html"> Achievements</a>
+                    </li>
+                    <li>
+                        <a href="Extracurriculars.html"> Extracurriculars</a>
+                    </li>
+                    <li>
+                        <a href="Contact.html"> Contact me</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <br> <br> <br> <br> <br>
+
+            <!--tittle of page-->
+            <h1>My Website </h1>
+            
+            <!--image on thw page-->
+            <img src="https://static.wixstatic.com/media/64922c_a798d7eb32824a26a02de2d7bf0c2dd2~mv2.jpg/v1/fill/w_1260,h_569,al_c,q_90/64922c_a798d7eb32824a26a02de2d7bf0c2dd2~mv2.webp" alt="homepage picture of office" id="image">
+
+            <!--div for extracurriculars information -->
+            <div class = "div"> 
+                <p style="font-size:27px; width:300px;"> 
+                <span style="font-weight:bold; font-size:27px; text-decoration:underline;"> Extracurriculars Page</span> 
+                <br>
+                <br>
+                Over the years I have taken up some extracurriculars and developed the hobbies, some of them I continue to enjoy. Click more...</p>
+
+                <!--button to link to the page from home page-->
+                <button id="extra-button"> Extracurriculars</button>
+                <script>
+                    /** have set my skills button using its ID, then set a link to my skills page*/
+                    document.getElementById("extra-button").setAttribute("onclick", "window.location.href = 'Extracurriculars.html';");   
+                </script>
+            </div>
+
+            <!--div for my acheveiments information-->
+            <div class = "div"> 
+                <p style="font-size:27px; width:300px;"> 
+                <span style="font-weight:bold; font-size:27px; text-decoration:underline;"> Achievements Page</span> 
+                <br>
+                <br>
+                During the years I've had many opportunities I participated in and completed with achievement. Click more...</p>
+
+                <button id="ach-button"> Achievements</button>
+                <script>
+                    /** have set my skills button using its ID, then set a link to my achievements page */
+                    document.getElementById("ach-button").setAttribute("onclick", "window.location.href = 'Achievements.html';");   
+                </script>
+            </div>
+
+            <!--div for my about me information-->
+            <div class = "div"> 
+                <p style="font-size:27px; width:300px;"> 
+                <span style="font-weight:bold; font-size:27px; text-decoration:underline;">About Me Page</span> 
+                <br> <br>
+                I am Laura Katsman, a student attending PTEC and Shaftesbury High School. I am 15 years old. Click more...</p>
+
+                <button id="aboutme-button"> About me </button>
+                <script>
+                    /** have set my skills button using its ID, then set a link to my about me page */
+                    document.getElementById("aboutme-button").setAttribute("onclick", "window.location.href = 'About me.html';");   
+                </script>
+            </div>
+        </main>
+    </body> 
+</html> 

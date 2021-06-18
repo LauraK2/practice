@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Final Project</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+
+        <style>
+            /* styling for container for the image and text*/
+            .container 
+            {
+                position: relative;
+                width: 30%;
+            }
+
+            /*styling for image in the fade transition*/
+            #image 
+            {
+                display: inline-block;
+                width: 100%;
+                height: 247px;
+            }
+
+            /*styling for the middle part where you swtich between the image to the text*/
+            .overlay 
+            {
+                position: absolute;
+                height: 250px;
+                width: 300px;
+                opacity: 0;
+                transition: .5s ease;
+                -webkit-transition: .5s ease;
+                background-color: #f2f5f7ab;
+            }
+
+            /*styling for how the transpart the text when hovering*/
+            /*example when I made opacity 0.5 and hovered the image was still showing*/
+            .container:hover .overlay 
+            {
+                opacity: 1;
+            }
+
+            /* styling for the text inside the trasition*/
+            .text 
+            {
+                color: black;
+                font-size: 24px;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+
+            /*styling for the the overall grid*/ 
+            .grid-container 
+            {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ;
+                grid-template-rows: 1fr 1fr;
+                grid-gap: 5px;
+                background-color: rgb(218, 238, 245);
+                padding: 5px;
+            }
+
+            /* styling for each box in the grid*/
+            .grid-container > div 
+            {
+                background-color: rgb(218, 238, 245);
+                text-align: center;
+                font-size: 30px;
+                padding: 5px;
+            }
+        </style>  
+    </head>
+
+    <body style="background-color: #E6E6FA; color: #252838;">
+        <main>
+            <!-- nav bar -->
+            <!--made class flex-container so the nav bar take the styling for a flexbox which i named flex-contanier-->
+            <nav class="flex-container">
+                <ul>
+                    <li>
+                        <a href="index.html">Home Page</a>
+                    </li>
+                    <li>
+                        <a href="About me.html"> About me</a>
+                    </li>
+                    <li>
+                        <a href="Achievements.html"> Achievements</a>
+                    </li>
+                    <li>
+                        <a href="Extracurriculars.html"> Extracurriculars</a>
+                    </li>
+                    <li>
+                        <a href="Contact.html"> Contact me</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <br> <br> <br> <br> <br>
+
+            <!--tittle of page-->
+            <h1>My Skills </h1>
+
+            <div class= "grid-container">
+                <!--div for the trasition-->
+                <div class="container">
+                    <!--image for the trasition, the the night picture of erath  from space-->
+                    <img src= "https://static.wixstatic.com/media/0ef738a5762b4722bc5c6b560c6c4a59.jpg/v1/fill/w_371,h_255,al_c,q_80,usm_0.66_1.00_0.01/Two%20Computer%20Screens.webp" alt="Computer Office" class="image">
+                    <div class="overlay">
+                        <div class="text"><span style="font-weight:bold; font-size:27px;">Technical skills</span>
+                            <br>Programmed a game <br> Designed a website <br> Built an Ethernet cable  
+                        </div>
+                    </div>
+                </div>
+            
+                <!--div for the techincal skills div-->
+                <div class="container">
+                    <!--image for the trasition, the picture with computer in and office-->
+                    <img src="https://static.wixstatic.com/media/64922c_87feee269726433797da929409f157f9~mv2.jpg/v1/fill/w_230,h_164,al_c,lg_1,q_80/people.webp" alt="Two people talking" class="image">
+                    <div class="overlay">
+                        <div class="text"><p> <span style="font-weight:bold; font-size:27px;">Communication skills</span>
+                            <br>Collaborated with others <br> Built strong relationships with others <br> Effectively communicated guidelines to others 
+                        </div>
+                    </div>
+                </div>
+            
+                <!--div for the techincal skills div-->
+                <div class="container">
+                    <!--image for the trasition, the picture with computer in and office-->
+                    <img src="https://static.wixstatic.com/media/64922c_410bef10580a40cb9c34a65e2a69ca10~mv2.jpg/v1/fill/w_354,h_204,al_c,q_80,usm_0.66_1.00_0.01/skill.webp" alt="poeple with creative minds" class="image">
+                    <div class="overlay">
+                        <div class="text"><p> <span style="font-weight:bold; font-size:27px;">Creative skills</span>
+                            <br>Resolved a conflict between team mates  <br> Presented to a large group  <br> Coordinated activities  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body> 
+</html> 

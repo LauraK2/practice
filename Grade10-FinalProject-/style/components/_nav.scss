@@ -1,0 +1,73 @@
+
+
+/*styling for the Unorder list for my nav across all the pages*/
+nav ul 
+{
+    display: inline;
+    list-style: none;
+}
+
+/*styling for the list of my pages added to my nav ul*/
+nav li 
+{
+    padding: 2px;
+    margin: 5px;
+    border: 5px;
+    font-size: 20px;
+    display: inline-block;
+    padding-left: 2px;
+}
+
+/*stylling for the indivudal links/anchors*/
+nav a
+{
+    padding: 10px;
+    margin: 2px;
+    border: 2px solid $border;
+    text-decoration: none;
+}
+
+/*styling for when you hover over a anchor/link*/
+nav a:hover, nav a:focus
+{
+    background-color: $nav-Bg;
+    color: $BG-color;
+}
+
+/*styling for when you have gone on a page and rturn to your orginal spot and it shows you've been to that page*/
+nav a:visited
+{
+    color: $visted; 
+}
+
+/*styling for the the nav */
+nav
+{
+    display: inline-block;
+    color: $nav-color;
+    background: $BG-color;
+    padding: 5px;
+    text-align: center;
+    margin: 10px;
+    overflow:hidden;
+    z-index: 3;
+}
+
+.flex-container 
+{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: $BG-color;
+    position: fixed;
+    justify-content:center;
+}
+
+.flex-container > div 
+{
+    background-color: $BG-color;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}

@@ -1,0 +1,202 @@
+/*styling for the Unorder list for my nav across all the pages*/
+nav ul {
+  display: inline;
+  list-style: none;
+}
+
+/*styling for the list of my pages added to my nav ul*/
+nav li {
+  padding: 2px;
+  margin: 5px;
+  border: 5px;
+  font-size: 20px;
+  display: inline-block;
+  padding-left: 2px;
+}
+
+/*stylling for the indivudal links/anchors*/
+nav a {
+  padding: 10px;
+  margin: 2px;
+  border: 2px solid black;
+  color: #91c9ee;
+  text-decoration: none;
+}
+
+/*styling for when you hover over a anchor/link*/
+nav a:hover, nav a:focus {
+  background-color: #eae1f0;
+  color: whitesmoke;
+}
+
+/*styling for when you have gone on a page and rturn to your orginal spot and it shows you've been to that page*/
+nav a:visited {
+  color: #b17bac;
+}
+
+/*styling for the the nav */
+nav {
+  display: inline-block;
+  color: blueviolet;
+  background: whitesmoke;
+  padding: 5px;
+  text-align: center;
+  margin: 10px;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-color: whitesmoke;
+  position: fixed;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-container > div {
+  background-color: whitesmoke;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Helvetica Neue', sans-serif;
+  text-align: center;
+}
+
+body {
+  background-color: #e4f1f5;
+  padding: 15px whitesmoke;
+}
+
+/*styling for the Unorder list for my nav across all the pages*/
+nav ul {
+  display: inline;
+  list-style: none;
+}
+
+/*styling for the list of my pages added to my nav ul*/
+nav li {
+  padding: 2px;
+  margin: 5px;
+  border: 5px;
+  font-size: 20px;
+  display: inline-block;
+  padding-left: 2px;
+}
+
+/*stylling for the indivudal links/anchors*/
+nav a {
+  padding: 10px;
+  margin: 2px;
+  border: 2px solid black;
+  color: #91c9ee;
+  text-decoration: none;
+}
+
+/*styling for when you hover over a anchor/link*/
+nav a:hover, nav a:focus {
+  background-color: #eae1f0;
+  color: whitesmoke;
+}
+
+/*styling for when you have gone on a page and rturn to your orginal spot and it shows you've been to that page*/
+nav a:visited {
+  color: #b17bac;
+}
+
+/*styling for the the nav */
+nav {
+  display: inline-block;
+  color: blueviolet;
+  background: whitesmoke;
+  padding: 5px;
+  text-align: center;
+  margin: 10px;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-color: whitesmoke;
+  position: fixed;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-container > div {
+  background-color: whitesmoke;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+/*div for bllue boxes on my pages*/
+.div {
+  border: 5px outset #252838;
+  padding: 30px;
+  margin: 22px;
+  background-color: #e8f6fa;
+  text-align: center;
+  font-size: 24px;
+  float: right;
+}
+
+/*styling for middle div because the positioning is different fron the rest*/
+#div1 {
+  border: 5px outset #252838;
+  padding: 7px;
+  margin: 15px;
+  background-color: #e8f6fa;
+  text-align: center;
+  font-size: 24px;
+  float: left;
+}
+
+/* styling for image */
+.img {
+  margin: 7px;
+  float: right;
+  border: 2px outset #252838;
+  -webkit-border: 2px outset #252838;
+  padding: 0%;
+  height: 300px;
+  width: 400px;
+}
+
+/*styling for middle image beacuse its different from the other styling for images*/
+#image {
+  margin: 7px;
+  float: left;
+  border: 2px outset #252838;
+  -webkit-border: 2px outset #252838;
+  padding: 0%;
+  height: 330px;
+  width: 400px;
+}
+
+/* styling for Canada image*/
+.image {
+  height: 250px;
+  width: 300px;
+  margin: 7px;
+}

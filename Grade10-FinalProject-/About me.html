@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Final Project</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+
+        <style>
+
+            #image
+            {
+                margin:7px;
+                float:right;
+                border: 2px outset #252838;
+                -webkit-border:2px outset #252838;
+                padding:0%;
+                height: 350px;
+                width:430px;
+                float: right;
+            }
+
+            /*styling for div for information about me */
+            #div 
+            {
+                border: 5px outset #252838;
+                padding:7px;
+                margin: 15px;
+                background-color:#e8f6fa;    
+                text-align: center;
+                font-size: 24px;
+                float: right;
+            }
+
+            /*styling for skills button*/
+            #skills-button
+            {
+                color:black;
+                background-color: #d3dcf2;
+                text-decoration: bold;
+                font-size: 30px;
+                margin:15px;
+                padding:7px;
+                float: left;
+                border: 2px outset #252838;
+
+            }
+
+            /*styling for education button*/
+            #education-button
+            {
+                color:black;
+                text-decoration: bold;
+                background-color: #d3dcf2;
+                font-size: 30px;
+                margin:15px;
+                padding:7px;
+                float: right;
+                border: 2px outset #252838;
+            }
+        </style>
+    </head>
+    <body style="background-color: #E6E6FA; color: #252838;">
+        <main>
+            <!-- nav bar -->
+            <!--made class flex-container so the nav bar take the styling for a flexbox which i named flex-contanier-->
+            <nav class="flex-container">
+                <ul>
+                    <li>
+                        <a href="index.html">Home Page</a>
+                    </li>
+                    <li>
+                        <a href="About me.html"> About me</a>
+                    </li>
+                    <li>
+                        <a href="Achievements.html"> Achievements</a>
+                    </li>
+                    <li>
+                        <a href="Extracurriculars.html"> Extracurriculars</a>
+                    </li>
+                    <li>
+                        <a href="Contact.html"> Contact me</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <br> <br> <br> <br> <br>
+            <!--title-->
+            <h1>About Laura Katsman </h1>
+
+            <!--div for information about me-->
+            <div id = "div">
+                <img src="https://static.wixstatic.com/media/64922c_64b1575d1a974be383e684bd27bd9cc8~mv2.jpg/v1/fill/w_516,h_530,al_c,q_80,usm_0.66_1.00_0.01/Me_JPG.webp" alt="Laura" id= "image">
+                <br> <p style="font-size:30px;">My name is Laura Katsman. I’m a grade 10 student at a technology based program PTEC and Shaftesbury High School. Over the last year I have been working to be certificated by Dell, participating in a Safety course, an Ethics course  and becoming lifeguard. During my free time I enjoy swimming, baking and hanging out with friends and family. I am very friendly, determined and a hard working.  </p>
+            </div>
+            <br>
+
+            <!--button for education -->
+            <button id="education-button">Education</button>
+            <!--button for education -->
+            <button id="skills-button"> Skills</button>
+
+            <script>
+                /** have set my skills button using its ID, then set the onclick attribute to attch a link to my 
+                 * skills page that can only be accessed through the button and is not on my nav */
+                document.getElementById("skills-button").setAttribute("onclick", "window.location.href = 'skills.html';");   
+            
+                /** have set my education button using its ID, then set the onclick attribute to attch a link to my 
+                 * education page that can only be accessed through the button and is not on my nav */
+                document.getElementById("education-button").setAttribute("onclick", "window.location.href = 'education.html';");
+            </script>
+        </main>
+    </body>
+</html>

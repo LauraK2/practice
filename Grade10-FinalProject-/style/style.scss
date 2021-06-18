@@ -1,0 +1,74 @@
+
+@import "components/nav";
+@import "utils/var";
+
+h1
+{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Helvetica Neue', sans-serif;
+    text-align: center;       
+}
+
+body  
+{
+    background-color: $BG-color;
+    padding: 15px $BG-color;
+}
+
+/*div for bllue boxes on my pages*/
+.div 
+{
+    border: 5px outset $border;
+    padding:30px;
+    margin: 22px;
+    background-color:$background-color;    
+    text-align: center;
+    font-size: 24px;
+    float: right;
+}
+
+/*styling for middle div because the positioning is different fron the rest*/
+#div1
+{
+    border: 5px outset $border;
+    padding:7px;
+    margin: 15px;
+    background-color: $background-color;    
+    text-align: center;
+    font-size: 24px;
+    float: left;
+}
+
+/* styling for image */
+.img
+{
+    margin:7px;
+    float:right;
+    border: 2px outset $border;
+    -webkit-border:2px outset $border;
+    padding:0%;
+    height: 300px;
+    width:400px;
+}
+
+/*styling for middle image beacuse its different from the other styling for images*/
+#image
+{
+    margin:7px;
+    float:left;
+    border: 2px outset $border;
+    -webkit-border:2px outset $border;
+    padding:0%;
+    height: 330px;
+    width:400px;
+}
+
+/* styling for Canada image*/
+.image
+{
+    height: 250px;
+    width: 300px;
+    margin: 7px;
+}
+
